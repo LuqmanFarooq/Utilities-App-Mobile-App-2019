@@ -1,11 +1,57 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
+  <ion-navbar color="primary">
+    <ion-title style="text-align: center">
       About
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+    <ion-card color="primary">
+      <ion-card-header style="font-weight: bolder">
+        <ion-icon name="time"></ion-icon>
+        Version 
+      </ion-card-header>
+      <ion-card-content>
+        1.0
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="primary">
+      <ion-card-header style="font-weight: bolder">
+        <ion-icon name="book"></ion-icon>
+        Tutorial 
+      </ion-card-header>
+      <ion-card-content>
+        <button ion-button round outline color="light" style="font-weight: bolder" (click)="toIntro()">Button for Introduction</button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="primary">
+      <ion-card-header style="font-weight: bolder">
+        <ion-icon name="information-circle"></ion-icon>
+        About 
+      </ion-card-header>
+      <ion-card-content>
+        <p>This is utility app that provides event search engine by any city in ireland,new page with headlines and a torch.</p>
+        <p>Open source code:</p>
+        <button ion-button round outline color="light" style="font-weight: bolder" href="#" 
+          onclick="window.open('https://github.com/LuqmanFarooq/Utilities-App-Mobile-App-2019', '_system', 'location=yes'); return false;">
+        GitHub</button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="primary">
+      <ion-card-header style="font-weight: bolder">
+        <ion-icon name="person"></ion-icon>
+        Author 
+      </ion-card-header>
+      <ion-card-content>
+        <p>Name: Muhammad Luqman</p>
+        <button ion-button round outline color="light" style="font-weight: bolder" href="#" 
+          onclick="window.open('https://github.com/LuqmanFarooq', '_system', 'location=yes'); return false;">
+        GitHub</button>
+      </ion-card-content>
+    </ion-card>
 
 </ion-content>

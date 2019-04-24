@@ -1,11 +1,10 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title style="text-align: center">Ticket Master</ion-title>
+    <ion-title style="text-align: center">Events Search</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <h2>{{keywords}}</h2>
     <ion-input ionBlur [(ngModel)]="keywords" placeholder="Input Keyword to search Events"></ion-input>
    <button ion-button (click)="search()" round>Search</button>
 

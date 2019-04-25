@@ -1,0 +1,54 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+      <ion-title style="text-align: center">TUTORIAL</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content>
+      <ion-slides pager="true" parallax="true" padding>
+    
+        <ion-slide>
+          <h1>Welcome to Utilites App</h1>
+          <br>
+          <h3>Swipe left to continue</h3>
+        </ion-slide>
+    
+        <ion-slide>
+          <h1>Instructions on App Usage</h1>
+        </ion-slide>
+  
+        <ion-slide>
+          <ion-img src="assets/imgs/Event.png" width="180" height="350"></ion-img>
+          <p>The home Tab is Events Search Engine where you can search events happening at specific city which is defined by user by inputing city name</p>
+          <p>E.g galway</p>
+          <p style="color: red"> Important! Make Sure you Spell the city name Correctly</p>
+        </ion-slide>
+  
+        <ion-slide>
+          <ion-img src="assets/imgs/News.jpg" width="180" height="350"></ion-img>
+          <p>The News Tab is where you Get latest headlines with images and there is a button on the top left corner for taking Screenshots</p>
+        </ion-slide>
+  
+        <ion-slide>
+          <ion-img src="assets/imgs/About.jpg" width="180" height="350"></ion-img>
+          <p>The about page holds all the information of the app.</p>
+          <p>You can click on github button to go to developes github repository</p>
+        </ion-slide>
+  
+        <ion-slide>
+          <ion-img src="assets/imgs/Contacts.jpg" width="180" height="350"></ion-img>
+          <p>The contact page where holds all the contact info of the developer</p>
+          <p>Clicking on Email Address launches the default mail app to send email to that address.</p>
+        </ion-slide>
+
+        <ion-slide>
+          <h1>Get started now!</h1>
+          <button ion-button outline small (click)="toHome()">
+            Start using the app
+          </button>
+        </ion-slide>
+    
+      </ion-slides>
+    </ion-content>

@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import {NewsPage} from '../pages/news/news';
+import{AppinfoPage} from '../pages/appinfo/appinfo';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -15,6 +16,7 @@ import { NewsProvider } from '../providers/news/news';
 import {HttpClientModule} from '@angular/common/http';
 import { TicketsProvider } from '../providers/tickets/tickets';
 import {FormsModule} from '@angular/forms';
+import { Screenshot } from '@ionic-native/screenshot/ngx';
 @NgModule({
   declarations: [
     MyApp,
@@ -22,6 +24,7 @@ import {FormsModule} from '@angular/forms';
     ContactPage,
     HomePage,
     NewsPage,
+    AppinfoPage,
     TabsPage
   ],
   imports: [
@@ -37,11 +40,13 @@ import {FormsModule} from '@angular/forms';
     ContactPage,
     HomePage,
     NewsPage,
+    AppinfoPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Screenshot,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     NewsProvider,
     TicketsProvider

@@ -5,10 +5,12 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-input ionBlur [(ngModel)]="keywords" placeholder="Input Keyword to search Events"></ion-input>
-   <button ion-button (click)="search()" round>Search</button>
-
+  <!--input for event search -->
+  <ion-input ionBlur [(ngModel)]="keywords" placeholder="Input City to search Events"></ion-input>
+  <!--button which calls search function on click -->
+  <button ion-button style="text-align: center" (click)="search()" round>Search</button>
   <ion-list>
+    <!--reading json data -->
     <ion-item *ngFor="let t of ticket">
       <h1 style="font-weight: bold" text-wrap>{{t.name}}</h1>
       <h3 text-wrap>{{t.type}}</h3>

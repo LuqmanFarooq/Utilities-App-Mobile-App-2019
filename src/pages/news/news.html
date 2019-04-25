@@ -1,17 +1,19 @@
 <!--
-  Generated template for the NewsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
+ News HTML Page
 -->
 <ion-header>
   <ion-navbar color="primary">
     <ion-title style="text-align: center">News Headlines</ion-title>
+    <!--Screenshot button when pressed screenshot fuction -->
+    <button ion-button round outline color="light" style="font-weight: bolder" (click)="screenshotUri">Screenshot</button>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding [class.newBG]='state'>
+  <!--Screenshot image -->
+  <img src="{{screen}}" *ngIf="state">
   <ion-list>
+<!--iterating through json data -->
     <ion-item *ngFor="let n of news">
       <h1 style="font-weight: bold" text-wrap>{{n.title}}</h1>
       <h3 text-wrap>{{n.description}}</h3>

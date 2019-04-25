@@ -23,7 +23,7 @@ The Location tab uses the geolocaton plugin of ionic to display current location
 
 About Tab
 
-The About tab contains stackcard which contains all the app information.it has a tutorial card with tutorial button when clicked shows the tutorial with snapshots how to use the app.
+The About tab contains stackcard which contains all the app information.it has a tutorial card with *tutorial button* when clicked shows the tutorial with snapshots how to use the app.
 
 it has 2 github buttons to navigate to the this projects github repository or to navigate to the Github profile of Author.
 Contact Tab

@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import {NewsPage} from '../pages/news/news';
+import {LocationPage} from '../pages/location/location';
 import{AppinfoPage} from '../pages/appinfo/appinfo';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -17,6 +18,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { TicketsProvider } from '../providers/tickets/tickets';
 import {FormsModule} from '@angular/forms';
 import { Screenshot } from '@ionic-native/screenshot/ngx';
+import { Geolocation } from '@ionic-native/geolocation';
+import { IonicStorageModule } from '@ionic/storage';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,12 +27,14 @@ import { Screenshot } from '@ionic-native/screenshot/ngx';
     ContactPage,
     HomePage,
     NewsPage,
+    LocationPage,
     AppinfoPage,
     TabsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
     HttpClientModule,
     FormsModule
   ],
@@ -40,6 +45,7 @@ import { Screenshot } from '@ionic-native/screenshot/ngx';
     ContactPage,
     HomePage,
     NewsPage,
+    LocationPage,
     AppinfoPage,
     TabsPage
   ],
@@ -49,7 +55,8 @@ import { Screenshot } from '@ionic-native/screenshot/ngx';
     Screenshot,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     NewsProvider,
-    TicketsProvider
+    TicketsProvider,
+    Geolocation
   ]
 })
 export class AppModule {}

@@ -9,7 +9,7 @@ It contains 5 pages which can be navigated through tabs.
 **Home Tab**
 
 The home tab shows Event Search Page which has an input form in which user has to input City name as a keword to search events in that
-city.
+city.Make Sure its the city of IE not any other country.
 
 It has a search button which call search function which uses Ticket Master Api  and displays the Events.
 

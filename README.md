@@ -11,11 +11,11 @@ It contains 5 pages which can be navigated through tabs.
 The home tab shows Event Search Page which has an input form in which user has to input City name as a keword to search events in that
 city.
 
-It has a search button which call search function and displays the results.
+It has a search button which call search function which uses Ticket Master Api  and displays the Events.
 
 **News Tab**
 
-The News tab shows latest headlines with images it has a screenshot button on the top left corner which uses native screenshot plugin to take screenshots.
+The News tab uses news Api and shows latest headlines with images it has a screenshot button on the top left corner which uses native screenshot plugin to take screenshots.
 
 **Location Tab**
 
@@ -30,6 +30,7 @@ Contact Tab
 
 The Contact tab contains contact information of Author with clickable links and Email which when clicked navigated to the default mail app.
 
+See Wiki for App usage
 
 Thanks
 **Regard's

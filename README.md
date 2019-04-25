@@ -1,5 +1,5 @@
 # Utilities-App-Mobile-App-2019
-************************************Utilities App G00353385**********************************
+************************************Utilities App G00353385*********************************
 This App is is build using ionic.
 It contains 5 pages which can be navigated through tabs.
 Home Tab

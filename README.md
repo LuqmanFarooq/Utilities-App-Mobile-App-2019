@@ -5,6 +5,7 @@
 This App is is build using ionic.
 
 It contains 5 pages which can be navigated through tabs.
+it shows Geo-location and uses API for event search based on location and uses news api to show headlines
 
 **Home Tab**
 
